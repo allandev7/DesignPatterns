@@ -21,11 +21,8 @@ public class Main {
 		double investido = 100;
 		int anos = 1;
 		System.out.println("Aqui temos um rendimento comum: " + 
-		investCommon.calcularRentabilidade(investido, anos) +"\n" +
-		"Aqui temos um total comum: " + investCommon.calcularTotal(investido, anos) +"\n");
-		
+		investCommon.calcularRentabilidade(investido, anos));		
 		System.out.println("Aqui temos um rendimento inteligente: " + 
-				investSmart.calcularRentabilidade(investido, anos) +"\n" +
-				"Aqui temos um total inteligente: " + investSmart.calcularTotal(investido, anos) +"\n");
-	}
+				investSmart.calcularRentabilidade(investido, anos));
+		}
 }

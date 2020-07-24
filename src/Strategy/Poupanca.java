@@ -8,9 +8,4 @@ public class Poupanca implements CalculoInvestimento {
 		return (investido * 0.037) * anos;
 	}
 
-	@Override
-	public Double calcularTotal(double investido, int anos) {
-		return calcularRentabilidade(investido, anos) + investido;
-	}
-
 }
