@@ -3,10 +3,10 @@ package NullObject;
 public class Main {
 
 	public static void main(String[] args) {
-//		Este padrão serve basicamente para evitar os famigerados nullPointerException
-//		ao ter um nullObject retorna-se uma classe com valores zerados
+//	Este padrão serve basicamente para evitar os famigerados nullPointerException ao ter um nullObject
+//  retorna-se uma classe com valores zerados, podendo usar como default num switch de uma factory por exemplo
 		
-		//Muitas das necessidades desse padrão pode ser resolvida no Java com o Optional
+//	Ao imaginar em usar esse padrão, pense se alternativas como o Optional nao poderia resolver
 		
 		Food bigMac = FactoryFood.getFood("Big Mac");
 		Food whopper = FactoryFood.getFood("Whopper");

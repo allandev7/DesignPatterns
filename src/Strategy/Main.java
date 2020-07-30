@@ -2,7 +2,6 @@ package Strategy;
 
 public class Main {
 	public static void main(String[] args) {
-//		Este é o padrao mais comum, e o que inicia nossa jornada
 //		Ele deve ser usado quando há diversos comportamentos em uma classe, que esta
 //		causando diversos ifs, ou switch case, ainda com a facilidade de criar um
 //		metodo abstrato no nosso enum que usaremos como fabrica, tudo fica ainda mais 
@@ -14,6 +13,8 @@ public class Main {
 		
 //		Tome cuidado ao escolher esse padrao, ele deve configurar os comportamentos (inclusive os null)
 //		e também deve evitar overflow de classes a ponto de dificultar o gerenciamento
+		
+// 		Basicamente é um factory method comportamental (que também serve para metodos e nao só objetos)
 		
 		CalculoInvestimento investCommon = TipoInvestidor.COMUM.factoryEnum();
 		CalculoInvestimento investSmart = TipoInvestidor.INTELIGENTE.factoryEnum();
